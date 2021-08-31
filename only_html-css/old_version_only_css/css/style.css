@@ -2,7 +2,7 @@ html, body {
     overflow-x: hidden;
     }
 body {
-    font-family: 'Acme', sans-serif;
+    font-family: 'Gentium Book Basic', serif;
     color: white;
     background-color: #1A1A1D;
 }
@@ -19,35 +19,21 @@ body p {
 #main-nav > ul {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    position: absolute;
     align-items: center;
-    align-content: space-between;
-    padding: 1rem 1rem 1rem 2.3rem;
-    margin: 0rem;
-}
-
-#main-nav > ul > .first {
-    margin: 0rem 3rem 0rem 1.5rem;
-    padding-left: 2rem;
-}
-
-#main-nav > ul > .middle {
-    margin: 0rem 3rem 0rem 3rem;
-}
-
-#main-nav > ul > .last {
-    margin: 0rem 1rem 0rem 3rem;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+    margin-right: 1rem;
 }
 
 #main-nav button {
     font-size: 0.9rem;
     color: white;
     transition-duration: 0.4s;
-    border: 0.15rem solid #333;
+    box-shadow: 0 0 2px 1px white;
     background-color: #333;
     padding: 0.6rem 0.3rem;
     margin-top: 1rem;
+    width: 10rem;
 }
 
 #main-nav button:hover {
@@ -80,6 +66,7 @@ body p {
 
 #headline {
     display: flex;
+    justify-content: center;
 }
 
 #headline > .headline-left {
@@ -117,10 +104,9 @@ body p {
 
 #headline > .headline-right {
     float: right;
-    border: solid white;
-    border-width: 0.3rem;
     margin: 5.5rem 10rem 10.5rem 10rem;
     background-color: #333;
+    box-shadow: 0 0 4px 3px white;
 }
 
 #headline > .headline-right > .about-title {
@@ -137,14 +123,6 @@ body p {
     text-align: center;
 }
 
-#projects > .divider{
-    border: 0.15rem solid #333;
-    background-color: #333;
-    border-radius: 4rem;
-    margin: 0rem 20rem;
-    padding: -3rem;
-}
-
 #projects > h1 {
     margin-top: 6rem;
     
@@ -154,14 +132,16 @@ body p {
     display: flex;
     align-content: space-between;
     margin: 6rem 0rem;
+    justify-content: center;
 }
 
 #projects > .projects-content > .project-1 {
     float: left;
-    width: 50%;
+    width: 40%;
     margin: 0rem 1.1rem 0rem 1.7rem;
     padding-bottom: 1rem;
     background-color: #333;
+    box-shadow: 0 0 4px 3px white;
 }
 
 #projects > .projects-content > .project-1 > p {
@@ -170,10 +150,11 @@ body p {
 
 #projects > .projects-content > .project-2 {
     float: right;
-    width: 50%;
+    width: 40%;
     margin: 0rem 1.7rem 0rem 1.1rem;
     padding-bottom: 1rem;
     background-color: #333;
+    box-shadow: 0 0 4px 3px white;
 }
 
 #projects > .projects-content > .project-2 > p {
@@ -192,15 +173,16 @@ body p {
 
 #skills > .skills-container > .skills-content {
     width: 22%;
-    margin: 0rem 1rem;
     padding-right: 0.3rem;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 #skills > .skills-container > .skills-content > .container {
     padding: 1.25rem;
     background: #333;
     box-sizing: border-box;
-    box-shadow: 0 1.25rem 3.125rem rgba(0,0,0,0.5);
+    box-shadow: 0 0 4px 3px white;
 }
 
 #skills > .skills-container > .skills-content > .container > h1 {
@@ -247,13 +229,15 @@ body p {
 #skills > .professional-skills > .graph {
     display: flex;
     align-items: center; 
-    margin: 0rem 0rem 5rem 3rem;
+    margin-bottom: 5rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 50%;
 }
 
 #skills > .professional-skills > .graph > .chart > .pie-chart { 
-    margin: 0rem 4rem 0rem 16rem;
     display: block; 
-    width: 18.75rem; 
+    width: 18.75rem;
     height: 18.75rem; 
     border-radius: 50%; 
     background-image: conic-gradient( 
@@ -265,19 +249,21 @@ body p {
 }  
 
 #skills > .professional-skills > .graph > .infography { 
-    margin: 0rem 16rem 0rem 4rem;
+    margin: 0 auto;
 }
 
 #footer {
     text-align: center;
     background-color: #333;
     border: 0.1rem solid black;
+    margin: 0 auto;
 }
 
 #footer > .info {
+    margin: 0.1rem 0rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 4rem 0rem;
 }
 
 #footer > .info > span {
@@ -285,12 +271,9 @@ body p {
     font-size: 1.7rem;
 }
 
-#footer > .info > .whatsapp {
-    margin-left: 13rem;
-}
-
 #footer > .info > #contact {
-    margin: 1.1rem 12rem 0rem 12rem;
+    margin-top: 1.1rem;
+    justify-content: center;
 }
 
 #footer > .info > #contact h1 {
@@ -306,18 +289,21 @@ body p {
     color: white;
 }
 
-#footer > .info > #contact > a:hover {
-    color: #0fffb7;
+#footer > .info > section {
+    padding: 5rem;
+    margin-right: 10rem;
+    display: inline-block;
 }
 
-#footer > .info > .wechat {
-    margin-right: 10rem;
+#footer > .info > #contact > a:hover {
+    color: #0fffb7;
 }
 
 #footer > .copyright {
     font-weight: bold;
     background-color: #1A1A1D;
     padding: 0.2rem 0rem;
+    margin: 0 auto;
 }
 
 
@@ -334,23 +320,13 @@ body p {
         align-items: center;
         margin: auto;
     }
-    
-    #main-nav > ul {
-        height: auto;
-        width: auto;
-        align-items: center;
-        margin: -0.8rem 0rem 0rem 0rem;
+
+    #main-nav ul {
+        margin-right: 3rem;
     }
 
-    #main-nav > ul > .first {
-        margin: 0rem 0.3rem;
-    }
-    
-    #main-nav > ul > .middle {
-        margin: 0rem 0.3rem;
-    }
-    #main-nav > ul > .last {
-        margin: 0rem 0.3rem;
+    #main-nav button {
+        width: auto;
     }
 
     #main-nav > a > .banner {
@@ -366,10 +342,6 @@ body p {
 
     #projects {
         margin-top: -8rem;
-    }
-    
-    #projects > .divider{
-        display: none;
     }
     
     #projects > .projects-content{
@@ -404,7 +376,7 @@ body p {
     }
  
     #skills > .skills-container > .skills-content {
-        margin-top: 1rem;
+        margin: 2rem 0rem;
     }
     
     #skills > .professional-skills > .graph {
@@ -413,17 +385,9 @@ body p {
         align-items: center;
     }
 
-    #skills > .professional-skills > .graph > .chart {
-        margin-right: 3rem;
-    }
-
     #skills > .professional-skills > .graph > .chart > .pie-chart { 
         margin: 0rem 0rem 4rem 1rem;
     }  
-
-    #skills > .professional-skills > .graph > .infography { 
-        margin-right: 5rem;
-    }
     
     #footer > .info {
         display: flex;
@@ -433,17 +397,19 @@ body p {
 
     #footer > .info > #contact {
         order: -1;
+        margin: -4rem;
     }
 
     #footer > .info > .whatsapp {
-        margin: 0rem -0.8rem 0rem -1rem;
+        margin: -4rem;
     }
 
     #footer > .info > .wechat {
-        margin: 2rem -0.8rem 0rem -1rem;
+        margin: -4rem;
     }
 
     #footer > .copyright {
+        margin-top: 1rem;
         font-size: small;
         width: 100%;
     }
@@ -462,15 +428,16 @@ body p {
         margin: auto;
     }
     
-    #main-nav button {
-        font-size: 0.35rem;
+    #main-nav > ul{
+        justify-content: center;
+        margin-right: 4.6rem;
     }
 
-    #main-nav > ul {
-        height: auto;
-        width: auto;
-        align-items: center;
-        margin: -2rem -3.5rem 0rem -3.1rem;
+    #main-nav button {
+        font-size: 0.35rem;
+        width: 98%;
+        margin-left: 1rem;
+        border: none;
     }
 
     #main-nav > ul > li > a > button > span {
@@ -511,15 +478,7 @@ body p {
         flex-direction: column;
         align-items: center;  
         margin: 0rem -22rem;
-    }
- 
-    #skills > .professional-skills > .graph > .chart > .pie-chart { 
-        margin: 0rem -4rem 4rem -4rem;   
-    }  
-
-    #footer > .info > #contact {
-        margin: 0rem -1rem;
-    }
+    } 
 }
 
 
@@ -528,17 +487,6 @@ body p {
 /* Desktop pc */
 /* For screens bigger than 1350px */
 @media screen and (min-width: 1350px) {
-    #main-nav > ul > .first {
-        margin: 0rem 4rem 0rem 4rem;
-        padding-left: 6rem;
-    }
-    
-    #main-nav > ul > .middle {
-        margin: 0rem 4rem 0rem 4rem;
-    }
-    #main-nav > ul > .last {
-        margin: 0rem 4rem 0rem 4rem;
-    }
 
     #main-nav > a > .banner {
         width: 100%;
@@ -583,5 +531,16 @@ body p {
 
     #footer > .info {
         margin-left: 10.3rem;
+    }
+
+}
+
+/* Laptop */
+/* For screens smaller than 1350px */
+@media screen and (max-width: 1350px) {
+    #footer > .info > section {
+        padding: 5rem;
+        margin: auto;
+        display: inline-block;
     }
 }
