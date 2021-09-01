@@ -63,8 +63,6 @@ body p {
     overflow: auto;
 }
 
-
-
 .dropdown-projects a, .dropdown-contactme a {
     color: black;
     padding: 12px 10px;
@@ -93,6 +91,12 @@ body p {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
+.project4:hover{
+    display: none;
+}
+/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION END*/
+
 /* Dropdown menu end*/
 
 .main {
@@ -104,6 +108,10 @@ body p {
 
 .main h1{
     text-align: center;
+}
+
+.main img {
+    display: inline-block;
 }
 
 #footer > .copyright {

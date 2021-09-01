@@ -99,14 +99,28 @@ body p {
 
 /* Dropdown menu end*/
 
-.main {
+.virelabs, .diginepsy, .coderunner, .mazerunner {
     background-color: #333;
     margin: 5rem 5rem 1rem 5rem;
     padding: 4rem;
     box-shadow: 0 0 4px 3px white;
 }
 
-.main h1{
+/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
+.mazerunner {
+    display: none;
+}
+/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
+
+.morevirelabs, .morediginepsy, .morecoderunner, .moremazerunner {
+    color: white;
+}
+
+.morevirelabs:hover, .morediginepsy:hover, .morecoderunner:hover, .moremazerunner:hover {
+    color: #0fffb7;
+}
+
+.allprojects h1, p{
     text-align: center;
 }
 
