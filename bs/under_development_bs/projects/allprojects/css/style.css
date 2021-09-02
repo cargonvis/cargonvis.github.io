@@ -104,6 +104,7 @@ body p {
     margin: 5rem 5rem 1rem 5rem;
     padding: 4rem;
     box-shadow: 0 0 4px 3px white;
+    
 }
 
 /* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
@@ -118,10 +119,19 @@ body p {
 
 .morevirelabs:hover, .morediginepsy:hover, .morecoderunner:hover, .moremazerunner:hover {
     color: #0fffb7;
+    text-decoration: none;
 }
 
 .allprojects h1, p{
     text-align: center;
+}
+
+.allprojects h1 {
+    margin-bottom: 5rem;
+}
+
+.allprojects .projects-description p {
+    margin-bottom: 5rem;
 }
 
 #footer > .copyright {
@@ -129,7 +139,6 @@ body p {
     font-weight: bold;
     background-color: #1A1A1D;
     padding: 1.5rem 0rem 0.5rem 0rem;
-    
     margin: 0 auto;
 }
 
@@ -171,6 +180,10 @@ body p {
     #main-nav > a > .banner {
         width: 100%;
         min-height: 170px;
+    }
+
+    .virelabs {
+        margin-bottom: -3rem;
     }
 
     #footer > .copyright {
@@ -232,6 +245,15 @@ body p {
         font-size: 0.5rem;
         max-width: 50px;
         margin-left: 1.05rem;
+    }
+
+    .virelabs {
+        margin-bottom: -11%;
+    }
+
+    .allprojects h1{
+        font-size: 2.5rem;
+        text-align: center;
     }
 }
 

@@ -29,7 +29,7 @@ body p {
     font-size: 1.5rem;
     color: white;
     transition-duration: 0.4s;
-    box-shadow: 0 0 2px 1px white;
+    box-shadow: 0 0 2px 1px rgb(95, 94, 94);
     background-color: #333;
     padding: 0.6rem 0.3rem;
     margin-top: 2.5rem;
@@ -99,46 +99,78 @@ body p {
 
 /* Dropdown menu end*/
 
-.virelabs, .diginepsy, .coderunner, .mazerunner {
+.signup-form {
     background-color: #333;
-    margin: 5rem 5rem 1rem 5rem;
-    padding: 4rem;
     box-shadow: 0 0 4px 3px white;
-    
-}
-
-/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
-.mazerunner {
-    display: none;
-}
-/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
-
-.morevirelabs, .morediginepsy, .morecoderunner, .moremazerunner {
+    margin: 5rem 0rem 0.5rem 16%;
+    width: 67.5%;
+    border-radius: 23px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+  
+  .signup-form h1 {
+    font-size: 25px;
+    font-weight: bold;
     color: white;
-}
+    margin: 6% 0% 0% 0%;
+  }
 
-.morevirelabs:hover, .morediginepsy:hover, .morecoderunner:hover, .moremazerunner:hover {
-    color: #0fffb7;
-    text-decoration: none;
-}
-
-.allprojects h1, p{
+  .signup-form p {
+    margin: 3rem 0rem;
+  }
+  
+  .signup-form input {
+    width: 240px;
+    border-radius: 15px;
     text-align: center;
-}
+    padding: 20px;
+    border: 0px;
+    box-sizing: border-box;
+  }
+  
+  .form-container > .signup-form > .textfield {
+    margin-bottom: 7px;
+  }
+  
+  .form-container > .signup-form > button {
+    width: 240px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 7%;
+    border-radius: 7px;
+    background-color: #1A1A1D;
+    box-shadow: 0 0 4px 3px white;
+    color: white;
+    border: none;
+    padding: 1.4% 0%;
+  }
 
-.allprojects h1 {
-    margin-bottom: 5rem;
-}
+  .form-container > .signup-form > button:hover {
+      background-color: white;
+      color: #1A1A1D;
+      box-shadow: none;
+  }
+  .form-container p, .form-container label {
+      color: white;
+  }
 
-.allprojects .projects-description p {
-    margin-bottom: 5rem;
-}
+  .form-container textarea {
+      color: #1A1A1D;
+      margin: 3rem 4rem;
+      padding: 3rem;
+  }
+
 
 #footer > .copyright {
     text-align: center;
     font-weight: bold;
     background-color: #1A1A1D;
     padding: 1.5rem 0rem 0.5rem 0rem;
+    
     margin: 0 auto;
 }
 
@@ -182,8 +214,12 @@ body p {
         min-height: 170px;
     }
 
-    .virelabs {
+    .signup-form {
         margin-bottom: -3rem;
+    }
+
+    .form-container textarea {
+        width: 86%;
     }
 
     #footer > .copyright {
@@ -201,6 +237,10 @@ body p {
 /* Smartphones */
 /* For screens smaller than 750px */
 @media screen and (max-width: 750px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
     body {
         align-items: center;
         margin: auto;
@@ -247,14 +287,31 @@ body p {
         margin-left: 1.05rem;
     }
 
-    .virelabs {
-        margin-bottom: -11%;
+    .signup-form {
+        width: 96.5%;
+        margin: 15% 0% -11% 2%;
+        padding: 3% 0%;
     }
 
-    .allprojects h1{
-        font-size: 2.5rem;
+    .signup-form h1 {
+        font-size: 25px;
+        margin: 20px 80px 0px 80px;
         text-align: center;
     }
+
+    .signup-form p {
+        text-align: center;
+    }
+
+    .signup-form > .textfield {
+        width: 80%;
+    }
+
+    .form-container > .signup-form > button {
+        width: 80%;
+        padding: 3%;
+    }
+
 }
 
 

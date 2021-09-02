@@ -108,10 +108,12 @@ body p {
 
 .main h1{
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .main img {
     display: inline-block;
+    margin-top: 2rem;
 }
 
 #footer > .copyright {
@@ -119,7 +121,6 @@ body p {
     font-weight: bold;
     background-color: #1A1A1D;
     padding: 1.5rem 0rem 0.5rem 0rem;
-    
     margin: 0 auto;
 }
 
@@ -161,6 +162,10 @@ body p {
     #main-nav > a > .banner {
         width: 100%;
         min-height: 170px;
+    }
+
+    .main {
+        margin-bottom: -3rem;
     }
 
     #footer > .copyright {
@@ -222,6 +227,21 @@ body p {
         font-size: 0.5rem;
         max-width: 50px;
         margin-left: 1.05rem;
+    }
+
+    .main {
+        margin-bottom: -11%;
+    }
+
+    .main h1{
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .main img{
+        display: flex;
+        width: auto;
+        margin: 2rem 0rem;
     }
 }
 

@@ -201,6 +201,7 @@ body p {
 
 #projects > .moreprojects:hover{
     color: #0fffb7;
+    text-decoration: none;
 }
 
 #skills h1 {
