@@ -38,7 +38,7 @@ body p {
 
 #main-nav button:hover {
     background-color: white;
-    border-color: #1A1A1D;
+    border: 0.3rem solid #1A1A1D;
     color: #1A1A1D;
     font-weight: bold;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -197,7 +197,6 @@ body p {
 
 #projects > .moreprojects{
     color: white;
-    font-size: 1.62rem
 }
 
 #projects > .moreprojects:hover{

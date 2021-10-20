@@ -14,7 +14,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- My own CSS and JS files goes here for overwriting some of the bootstrap one if needed -->
-<link rel="stylesheet" href="/projects/allprojects/css/style.css">
+<link rel="stylesheet" href="/form/css/style.css">
 <script src="js/script.js"></script>
 </head>
 <body>
@@ -26,10 +26,10 @@
                 <div class="myprojects">
                     <li class="middle"><a href="../../index.html#projects"><button><span class="far fa-file-code"></span>&nbsp;&nbsp;My Projects</button></a></li>
                     <div class="dropdown-projects">
-                        <a class="project1" href="../virelabs/virelabs.html">Virelabs</a>
-                        <a class="project2" href="../diginepsy/diginepsy.html">Diginepsy</a>
-                        <a class="project3" href="../coderunner/coderunner.html">CodeRunner</a>
-                        <a class="project4" href="../mazerunner/mazerunner.html">Under Construction</a>
+                        <a class="project1" href="../projects/virelabs/virelabs.html">Virelabs</a>
+                        <a class="project2" href="../projects/diginepsy/diginepsy.html">Diginepsy</a>
+                        <a class="project3" href="../projects/coderunner/coderunner.html">CodeRunner</a>
+                        <a class="project4" href="../projects/mazerunner/mazerunner.html">Under Construction</a>
                     </div>
                 </div>
                 <li class="middle"><a href="../../index.html#skills"><button><span class="fas fa-cogs"></span>&nbsp;&nbsp;Skills</button></a></li>
@@ -45,37 +45,24 @@
         </div>
     </header>
     <main>
-        <div class="allprojects">
-            <h1>My Projects</h1>
-            <p>Here you can find all my projects:</p>
-            <div class="projects-description">
-                <section class="mazerunner">
-                    <h1>Maze Runner</h1>
-                    <p>Maze Runner</p>
-                    <a class="moremazerunner" href="../mazerunner/mazerunner.html"><p>More about Maze Runner...</p></a>
-                </section>
-                <section class="coderunner">
-                    <h1>CodeRunner</h1>
-                    <p>Implementing CodeRunner plugin in SAMK Moodle. Study of required documentation.
-                        Innovating new exercises and quizzes categorised by topic. Configured for avoiding future students to cheat.
-                        Reporting working hours.</p>
-                    <a class="morecoderunner" href="../coderunner/coderunner.html"><p>More about CodeRunner...</p></a>
-                </section>
-                <section class="diginepsy">
-                    <h1>Diginepsy</h1>
-                    <p>Build a web form with a questionnaire where user can tick checkboxes and write some details.
-                        The web give user written conclusion and draw some graph. The final product is bundled and uploaded to app and play stores.
-                        Use of HTML, CSS, JavaScript and React.</p>
-                    <a class="morediginepsy" href="../diginepsy/diginepsy.html"><p>More about Diginepsy...</p></a>
-                </section>
-                <section class="virelabs">
-                    <h1>Virelabs</h1>
-                    <p>Develop an image detection system for recognising strollers and wheelchairs.
-                        Annotating images by using labelling. Training of a deep neural network to detect those objects.
-                        The image is processed with Yolo(v3) and Darknet locally by using "Virebox".</p>
-                    <a class="morevirelabs" href="../virelabs/virelabs.html"><p>More about Virelabs...</p></a>
-                </section>
-            </div>
+        <div class="form-container">
+            <form class="signup-form" action="mailto:cgonv1993@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+                <h1>Contact Me</h1>
+                <p>Fill this form and I will get back to you within 24h. Thank you.</p>
+                <input type="text" class="textfield" placeholder="Your Name" />
+                <input type="text" class="textfield" placeholder="Your Email Address" />
+                <input type="text" class="textfield" placeholder="Your Phone Number" />
+                <p>How do you prefer me to contact you?:</p>
+                    <input type="checkbox" id="option1" name="option1" value="email">
+                    <label for="option1"> By Email</label><br>
+                    <input type="checkbox" id="option2" name="option2" value="call">
+                    <label for="option2"> By phone call </label><br>
+                    <input type="checkbox" id="option3" name="option3" value="whatsapp">
+                    <label for="option3"> By whatsapp </label>
+                <textarea rows="4" cols="50" name="comment" form="usrform">
+                </textarea>
+                <button><span class="far fa-paper-plane"></span>&nbsp&nbsp Submit </button>
+            </form>
         </div>
         <div id="footer">
             <section class="copyright">
