@@ -83,7 +83,7 @@ body p {
     color: white;
 }
 
-.project1:hover, .project2:hover , .project3:hover, .project4:hover, .form:hover {
+.project1:hover, .project2:hover , .project3:hover, .project4:hover, .project5:hover, .form:hover {
     background-color: white;
     border: 0.3rem solid #1A1A1D;
     color: #1A1A1D;
@@ -92,7 +92,7 @@ body p {
 }
 
 /* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
-.project4:hover{
+.project5:hover{
     display: none;
 }
 /* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION END*/
