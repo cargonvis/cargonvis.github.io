@@ -92,7 +92,7 @@ body p {
 }
 
 /* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
-.project5:hover{
+.projectUC:hover{
     display: none;
 }
 /* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION END*/
@@ -112,20 +112,13 @@ body p {
     display: none;
 }
 
-.virelabs2 {
-    display: none;
-}
-
-.rosproject {
-    display: none;
-}
 /* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
 
-.morevirelabs, .morecoderunner, .morediginepsy, .moreknightrider, .moremazerunner, .morevirelabs2, .rosproject {
+.morevirelabs, .morecoderunner, .morediginepsy, .moreknightrider, .moremazerunner, .morevirelabs2, .morerosproject {
     color: white;
 }
 
-.morevirelabs:hover, .morecoderunner:hover, .morediginepsy:hover, .moreknightrider:hover, .moremazerunner:hover, .morevirelabs2:hover, .rosproject:hover {
+.morevirelabs:hover, .morecoderunner:hover, .morediginepsy:hover, .moreknightrider:hover, .moremazerunner:hover, .morevirelabs2:hover, .morerosproject:hover {
     color: #0fffb7;
     text-decoration: none;
 }

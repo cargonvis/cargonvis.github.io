@@ -24,14 +24,16 @@
                 <li class="first"><a href="#"><button><span class="fas fa-home"></span>&nbsp;&nbsp;Home</button></a></li>
                 <li class="middle"><a href="#headline"><button><span class="far fa-id-card"></span>&nbsp;&nbsp;About Me</button></a></li>
                 <div class="myprojects">
-                    <li class="middle"><a href="#projects"><button><span class="far fa-file-code"></span>&nbsp;&nbsp;My Projects</button></a></li>
-                    <div class="dropdown-projects">
+                    <li class="middle"><a href="projects/allprojects/allprojects.html"><button><span class="far fa-file-code"></span>&nbsp;&nbsp;My Projects</button></a></li>
+                    <!-- <div class="dropdown-projects">
                         <a class="project1" href="projects/virelabs/virelabs.html">Case Škoda</a>
                         <a class="project2" href="projects/coderunner/coderunner.html">CodeRunner</a>
                         <a class="project3" href="projects/diginepsy/diginepsy.html">Diginepsy</a>
                         <a class="project4" href="projects/knightrider/knightrider.html">Knight Rider</a>
-                        <a class="project5" href="projects/underconstruction/underconstruction.html">Under Construction</a>
-                    </div>
+                        <a class="project5" href="projects/virelabs2/virelabs2.html">TrainScanner</a>
+                        <a class="project6" href="projects/rosproject/rosproject.html">ROS-project</a>
+                        <a class="projectUC" href="projects/underconstruction/underconstruction.html">Under Construction</a>
+                    </div> -->
                 </div>
                 <li class="middle"><a href="#skills"><button><span class="fas fa-cogs"></span>&nbsp;&nbsp;Skills</button></a></li>
                 <li class="middle"><a href="/file/CVCarlosGonzalezVisiedo.pdf" target="_blank"><button><span class="fas fa-file-download"></span>&nbsp;&nbsp;Curriculum Vitae</button></a></li>
@@ -68,59 +70,60 @@
             <h1>My Projects</h1>
             <section class="projects-content">
                 <div class="project-1">
-                    <h1>Knight Rider</h1>
-                    <p>Development of a virtual assistant similar to K.I.T.T. from the 80's Knight Rider TV show. 
-                        The program transcribe the input audio (voice) and outputs an audio as output. Google home also implemented. 
-                        Use of Raspberry Pi 4B, Arduino nano and Python.</p>
+                    <h1>ROS Project with Object Detection</h1>
+                    <p>Development of a Object Detection model that detects tyres stacks from a pallet and is able to send the information 
+                        to a robot (coordinates, number of stacks, number of tyres per stack). Use of ROS for connecting depth cameras and recording 
+                        rosbags from the environment. Those rosbags were transformed into video and then into frames for training the object detection 
+                        model. Image annotation with labelImg and training an object detection model with YOLOR. Use of python.</p>
                 </div>
                 <div class="project-2">
-                    <h1>Diginepsy</h1>
-                    <p>Web form with a questionaire where user can tick checkboxes and write some details. 
-                        The web give user written conclusion and draw some graph. The final product is bundled and uploaded to app & app stores. 
-                        Use of HTML, CSS, JavaScript and React. </p>
+                    <h1> TrainScanner Project with Object Detection</h1>
+                    <p>Development of an image detection system that is able to analyze scanned trains images (raw data) and identify each unit (wagon) of it.
+                        Annotating images by using labelImg and training of a deep neural network. The images are processed with YOLOv4 and Darknet locally by 
+                        using "Virebox". Use of Python.</p>
                 </div>
             </section>
             <a class="moreprojects" href="projects/allprojects/allprojects.html"><p>More projects...</p></a>
         </div>
         <div id="skills">
-            <h1>Software Skills</h1>
+            <h1>Programming Skills</h1>
             <section class="skills-container">
                 <section class="skills-content">
                     <div class="containers">
-                        <h1>Programming</h1>
+                        <h1>Programming languages</h1>
                         <section class="skill-description">
                             <p>Python</p>
-                            <!-- <p>80%</p> -->
+                            <!-- <p>85%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:80%"></div>
+                                <div class="bar-level" style="width:85%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
                             <p>C++</p>
-                            <!-- <p>50%</p> -->
+                            <!-- <p>65%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:50%"></div>
+                                <div class="bar-level" style="width:65%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
                             <p>C#</p>
-                            <!-- <p>50%</p> -->
+                            <!-- <p>65%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:50%"></div>
+                                <div class="bar-level" style="width:65%"></div>
+                            </div>
+                        </section>
+                        <section class="skill-description">
+                            <p>Bash</p>
+                            <!-- <p>60%</p> -->
+                            <div class="bar">
+                                <div class="bar-level" style="width:60%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
                             <p>JavaScript</p>
-                            <!-- <p>50%</p> -->
+                            <!-- <p>40%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:50%"></div>
-                            </div>
-                        </section>
-                        <section class="skill-description">
-                            <p>PHP</p>
-                            <!-- <p>30%</p> -->
-                            <div class="bar">
-                                <div class="bar-level" style="width:30%"></div>
+                                <div class="bar-level" style="width:40%"></div>
                             </div>
                         </section>
                     </div>
@@ -130,121 +133,122 @@
                         <h1>Libraries</h1>
                         <section class="skill-description">
                             <p>Numpy</p>
-                            <!-- <p>70%</p> -->
+                            <!-- <p>75%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:70%"></div>
+                                <div class="bar-level" style="width:75%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
                             <p>Pandas</p>
-                            <!-- <p>65%</p> -->
+                            <!-- <p>75%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:65%"></div>
-                            </div>
-                        </section>
-                        <section class="skill-description">
-                            <p>BeautifulSoup</p>
-                            <!-- <p>40%</p> -->
-                            <div class="bar">
-                                <div class="bar-level" style="width:40%"></div>
-                            </div>
-                        </section>
-                        <section class="skill-description">
-                            <p>Pillow</p>
-                            <!-- <p>30%</p> -->
-                            <div class="bar">
-                                <div class="bar-level" style="width:30%"></div>
+                                <div class="bar-level" style="width:75%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
                             <p>Tensorflow</p>
-                            <!-- <p>25%</p> -->
+                            <!-- <p>60%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:25%"></div>
+                                <div class="bar-level" style="width:60%"></div>
+                            </div>
+                        </section>
+                        <section class="skill-description">
+                            <p>Matplotlib</p>
+                            <!-- <p>50%</p> -->
+                            <div class="bar">
+                                <div class="bar-level" style="width:50%"></div>
+                            </div>
+                        </section>
+                        <section class="skill-description">
+                            <p>NLTK</p>
+                            <!-- <p>30%</p> -->
+                            <div class="bar">
+                                <div class="bar-level" style="width:30%"></div>
                             </div>
                         </section>
                     </div>
                 </section>
                 <section class="skills-content">
                     <div class="containers">
-                        <h1>Frameworks & More</h1>
+                        <h1>Frameworks</h1>
                         <section class="skill-description">
-                            <p>Django</p>
+                            <p>Keras</p>
+                            <!-- <p>75%</p> -->
+                            <div class="bar">
+                                <div class="bar-level" style="width:75%"></div>
+                            </div>
+                        </section>
+                        <section class="skill-description">
+                            <p>Darknet</p>
                             <!-- <p>70%</p> -->
                             <div class="bar">
                                 <div class="bar-level" style="width:70%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
-                            <p>.Net</p>
-                            <!-- <p>45%</p> -->
+                            <p>.NET</p>
+                            <!-- <p>60%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:45%"></div>
+                                <div class="bar-level" style="width:60%"></div>
+                            </div>
+                        </section>
+                        <section class="skill-description">
+                            <p>Django</p>
+                            <!-- <p>50%</p> -->
+                            <div class="bar">
+                                <div class="bar-level" style="width:50%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
                             <p>Bootstrap</p>
-                            <!-- <p>40%</p> -->
-                            <div class="bar">
-                                <div class="bar-level" style="width:40%"></div>
-                            </div>
-                        </section>
-                        <section class="skill-description">
-                            <p>React</p>
                             <!-- <p>30%</p> -->
                             <div class="bar">
                                 <div class="bar-level" style="width:30%"></div>
-                            </div>
-                        </section>
-                        <section class="skill-description">
-                            <p>FastAPI</p>
-                            <!-- <p>20%</p> -->
-                            <div class="bar">
-                                <div class="bar-level" style="width:20%"></div>
                             </div>
                         </section>
                     </div>
                 </section>
                 <section class="skills-content">
                     <div class="containers">
-                        <h1>Robotics & AI<br></h1>
+                        <h1>OS & Softwares<br></h1>
+                        <section class="skill-description">
+                            <p>Linux (Ubuntu, Xubuntu)</p>
+                            <!-- <p>85%</p> -->
+                            <div class="bar">
+                                <div class="bar-level" style="width:85%"></div>
+                            </div>
+                        </section>
+                        <section class="skill-description">
+                            <p>Windows</p>
+                            <!-- <p>80%</p> -->
+                            <div class="bar">
+                                <div class="bar-level" style="width:80%"></div>
+                            </div>
+                        </section>
                         <section class="skill-description">
                             <p>ROS</p>
-                            <!-- <p>50%</p> -->
+                            <!-- <p>60%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:50%"></div>
+                                <div class="bar-level" style="width:60%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
                             <p>Gazebo</p>
-                            <!-- <p>50%</p> -->
+                            <!-- <p>60%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:50%"></div>
+                                <div class="bar-level" style="width:60%"></div>
                             </div>
                         </section>
                         <section class="skill-description">
-                            <p>Darknet</p>
-                            <!-- <p>30%</p> -->
+                            <p>Unity</p>
+                            <!-- <p>60%</p> -->
                             <div class="bar">
-                                <div class="bar-level" style="width:30%"></div>
-                            </div>
-                        </section>
-                        <section class="skill-description">
-                            <p>Yolo</p>
-                            <!-- <p>30%</p> -->
-                            <div class="bar">
-                                <div class="bar-level" style="width:30%"></div>
-                            </div>
-                        </section>
-                        <section class="skill-description">
-                            <p>Keras</p>
-                            <!-- <p>30%</p> -->
-                            <div class="bar">
-                                <div class="bar-level" style="width:30%"></div>
+                                <div class="bar-level" style="width:60%"></div>
                             </div>
                         </section>
                     </div>
                 </section>
+                
             </section>
             <h1>Professional Skills</h1>
             <section class="professional-skills">
@@ -253,11 +257,14 @@
                         <div class="pie-chart"></div>
                     </section>
                     <section class="infography right">
-                        <p><span style="color:DodgerBlue">&#9724;</span>Front-end Development (25%)</p>
-                        <p><span style="color:Crimson">&#9724;</span>Back-end Development (25%)</p>
-                        <p><span style="color:Coral">&#9724;</span>Data Analysis (25%)</p>
-                        <p><span style="color:#FFFF66">&#9724;</span>Robotics (10%)</p>
-                        <p><span style="color:DarkCyan">&#9724;</span>AI (15%)</p>
+                        <p><span style="color:DodgerBlue">&#9724;</span>Machine Learning (15%)</p>
+                        <p><span style="color:Crimson">&#9724;</span>Robotics (15%)</p>
+                        <p><span style="color:#488A99">&#9724;</span>Embedded Systems (15%)</p>
+                        <p><span style="color:Coral">&#9724;</span>Data Analysis (15%)</p>
+                        <p><span style="color:#FFFF66">&#9724;</span>Natural Language Processing (NLP) (10%)</p>
+                        <p><span style="color:#421281">&#9724;</span>Cloud Computing (10%)</p>
+                        <p><span style="color:#694c31">&#9724;</span>Databases (10%)</p>
+                        <p><span style="color:#6ab187">&#9724;</span>Web Development (10%)</p>
                     </section>
                 </div>
             </section>

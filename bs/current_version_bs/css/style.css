@@ -92,7 +92,7 @@ body p {
 }
 
 /* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
-.project5:hover{
+.projectUC:hover{
     display: none;
 }
 /* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION END*/
@@ -285,11 +285,14 @@ body p {
     height: 30rem; 
     border-radius: 50%; 
     background-image: conic-gradient( 
-        DodgerBlue 0 90deg,
-        Crimson 0 180deg,  
-        Coral 0 270deg,
-        #FFFF66 0 306deg,
-        DarkCyan 0); 
+        DodgerBlue 0 54deg,
+        Crimson 0 108deg,  
+        #488A99 0 162deg,
+        Coral 0 216deg,
+        #FFFF66 0 252deg,
+        #421281 0 288deg,
+        #694c31 0 324deg,
+        #6ab187 0); 
 }  
 
 #skills > .professional-skills > .graph > .infography { 

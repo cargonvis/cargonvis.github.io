@@ -24,14 +24,16 @@
                 <li class="first"><a href="../../index.html"><button><span class="fas fa-home"></span>&nbsp;&nbsp;Home</button></a></li>
                 <li class="middle"><a href="../../index.html#headline"><button><span class="far fa-id-card"></span>&nbsp;&nbsp;About Me</button></a></li>
                 <div class="myprojects">
-                    <li class="middle"><a href="../../index.html#projects"><button><span class="far fa-file-code"></span>&nbsp;&nbsp;My Projects</button></a></li>
-                    <div class="dropdown-projects">
-                        <a class="project1" href="../virelabs/virelabs.html">Virelabs</a>
+                    <li class="middle"><a href="../allprojects/allprojects.html"><button><span class="far fa-file-code"></span>&nbsp;&nbsp;My Projects</button></a></li>
+                    <!-- <div class="dropdown-projects">
+                        <a class="project1" href="../virelabs/virelabs.html">Case Škoda</a>
                         <a class="project2" href="../coderunner/coderunner.html">CodeRunner</a>
                         <a class="project3" href="../diginepsy/diginepsy.html">Diginepsy</a>
                         <a class="project4" href="../knightrider/knightrider.html">Knight Rider</a>
-                        <a class="project5" href="projects/underconstruction/underconstruction.html">Under Construction</a>
-                    </div>
+                        <a class="project5" href="../virelabs2/virelabs2.html">TrainScanner</a>
+                        <a class="project6" href="../rosproject/rosproject.html">ROS-project</a>
+                        <a class="projectUC" href="projects/underconstruction/underconstruction.html">Under Construction</a>
+                    </div> -->
                 </div>
                 <li class="middle"><a href="../../index.html#skills"><button><span class="fas fa-cogs"></span>&nbsp;&nbsp;Skills</button></a></li>
                 <li class="middle"><a href="/file/CVCarlosGonzalezVisiedo.pdf" target="_blank"><button><span class="fas fa-file-download"></span>&nbsp;&nbsp;Curriculum Vitae</button></a></li>
@@ -51,47 +53,53 @@
             <p>Here you can find all my projects:</p>
             <div class="projects-description">
                 <section class="rosproject">
-                    <h1>ROS Project</h1>
-                    <p>ROS Project</p>
-                    <a class="rosproject" href="../rosproject/rosproject.html"><p>More about ROS Project...</p></a>
+                    <h1>ROS Project with Object Detection</h1>
+                    <p>Development of a Object Detection model that detects tyres stacks from a pallet and is able to send the 
+                        information to a robot (coordinates, number of stacks, number of tyres per stack). Use of ROS for connecting 
+                        depth cameras and recording rosbags from the environment. Those rosbags were transformed into video and then 
+                        into frames for training the object detection model. Image annotation with labelImg and training an object 
+                        detection model with YOLOR. Use of python.</p>
+                    <a class="morerosproject" href="../rosproject/rosproject.html"><p>More about this project...</p></a>
                 </section>
                 <section class="virelabs2">
-                    <h1>Virelabs 2</h1>
-                    <p>Virelabs 2</p>
-                    <a class="morevirelabs2" href="../virelabs2/virelabs2.html"><p>More about Virelabs 2...</p></a>
+                    <h1>TrainScanner Project with Object Detection</h1>
+                    <p>Development of an image detection system that is able to analyze scanned trains images (raw data) and identify 
+                        each unit (wagon) of it. Annotating images by using labelImg and training of a deep neural network. The images 
+                        are processed with YOLOv4 and Darknet locally by using "Virebox". Use of Python.</p>
+                    <a class="morevirelabs2" href="../virelabs2/virelabs2.html"><p>More about this project...</p></a>
                 </section>
                 <section class="mazerunner">
                     <h1>Maze Runner</h1>
                     <p>Maze Runner</p>
-                    <a class="moremazerunner" href="../mazerunner/mazerunner.html"><p>More about Maze Runner...</p></a>
+                    <a class="moremazerunner" href="../mazerunner/mazerunner.html"><p>More about this project...</p></a>
                 </section>
                 <section class="knightrider">
-                    <h1>Kight Rider</h1>
+                    <h1>Customized Virtual Assistant in Embedded Systems</h1>
                     <p>Development of a virtual assistant similar to K.I.T.T. from the 80's Knight Rider TV show. 
                         The program transcribe the input audio (voice) and outputs an audio as output. Google home also implemented. 
                         Use of Raspberry Pi 4B, Arduino nano and Python.</p>
-                    <a class="moreknightrider" href="../knightrider/knightrider.html"><p>More about Knight Rider...</p></a>
+                    <a class="moreknightrider" href="../knightrider/knightrider.html"><p>More about this project...</p></a>
                 </section>
                 <section class="diginepsy">
-                    <h1>Diginepsy</h1>
+                    <h1>Software Development Project for Mobile App</h1>
                     <p>Build a web form with a questionnaire where user can tick checkboxes and write some details.
                         The web give user written conclusion and draw some graph. The final product is bundled and uploaded to app and play stores.
                         Use of HTML, CSS, JavaScript and React.</p>
-                    <a class="morediginepsy" href="../diginepsy/diginepsy.html"><p>More about Diginepsy...</p></a>
+                    <a class="morediginepsy" href="../diginepsy/diginepsy.html"><p>More about this project...</p></a>
                 </section>
                 <section class="coderunner">
-                    <h1>CodeRunner</h1>
+                    <h1>CodeRunner plugin for SAMK Moodle</h1>
                     <p>Implementing CodeRunner plugin in SAMK Moodle. Study of required documentation.
                         Innovating new exercises and quizzes categorised by topic. Configured for avoiding future students to cheat.
                         Reporting working hours.</p>
-                    <a class="morecoderunner" href="../coderunner/coderunner.html"><p>More about CodeRunner...</p></a>
+                    <a class="morecoderunner" href="../coderunner/coderunner.html"><p>More about this project...</p></a>
                 </section>
                 <section class="virelabs">
-                    <h1>Virelabs</h1>
+                    <h1>Object Recognition Project with Neural Networks</h1>
                     <p>Develop an image detection system for recognising strollers and wheelchairs.
                         Annotating images by using labelling. Training of a deep neural network to detect those objects.
                         The image is processed with Yolo(v3) and Darknet locally by using "Virebox".</p>
-                    <a class="morevirelabs" href="../virelabs/virelabs.html"><p>More about Virelabs...</p></a>
+                    <a class="morevirelabs" href="../virelabs/virelabs.html"><p>More about this project...</p></a>
                 </section>
             </div>
         </div>
