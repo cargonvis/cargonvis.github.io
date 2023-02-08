@@ -14,8 +14,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- My own CSS and JS files goes here for overwriting some of the bootstrap one if needed -->
-<!-- <link rel="stylesheet" href="/projects/virelabs/css/style.css"> -->
-<link rel="stylesheet" href="css/virelabs_style.css">
+<link rel="stylesheet" href="/projects/mazerunner/css/style.css">
 <script src="js/script.js"></script>
 </head>
 <body>
@@ -50,13 +49,16 @@
     </header>
     <main>
         <div class="main">
-            <h1>Object Recognition Project with Neural Networks</h1>
-            <p>Company: Vire labs Oy &emsp;&emsp;&emsp; Working time: January 2021 - April 2021</p>&nbsp;
-            <p>Develop of an image detection system for recognising wheelchairs and strollers. With a camera placed inside a tram, when the tram doors close, a still-image is taken.
-                The still image is then processed with Yolo(v3) and Darknet locally by using "Virebox". Trained a deep neural network with Yolo to detect those objects (wheelchairs and strollers).
-                For that it was neccesary to download few hundred of images from Google images with Commercial Creative Commons license and annotate them by using "labelimg" software. 
-                For generating new images it was used Gimp for manipulating images by placing wheelchairs and strollers in them.
-                The work was divided in teams and done task and working hours were reported to the Project Manager in a weekly basis.</p>
+            <h1>ROS Project with Object Detection</h1>
+            <p>Company: Cimcorp Oy &emsp;&emsp;&emsp; Working time: December 2021 - April 2022</p>&nbsp;
+            <p>Development of a Object Detection model that detects tyres stacks from a pallet and is able to send the 
+                information to a robot (coordinates, number of stacks, number of tyres per stack). Use of ROS for connecting 
+                depth cameras and recording rosbags from the environment. Those rosbags were transformed into video and then 
+                into frames for training the object detection model. Image annotation with labelImg and training an object 
+                detection model with YOLOR. Use of python.</p>
+            <!-- <img class="img-responsive" src="/img/mazerunner-labyrinth.png" alt="main_banner" width="20%" height="auto"> 
+            <img class="img-responsive" src="/img/mazerunner-front.jpeg" alt="main_banner" width="20%" height="auto"> 
+            <img class="img-responsive" src="/img/mazerunner-top.jpeg" alt="main_banner" width="20%" height="auto">  -->
         </div>
         <div id="footer">
             <section class="copyright">
