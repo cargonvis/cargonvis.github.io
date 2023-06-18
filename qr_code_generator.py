@@ -4,7 +4,7 @@ import qrcode
 from PIL import Image, ImageDraw
 
 # Generate the QR code
-url = 'https://cargonvis.github.io/my_portfolio'
+url = 'https://cargonvis.github.io/'
 qr = qrcode.QRCode(version=1, box_size=10, border=6)
 qr.add_data(url)
 qr.make(fit=True)
