@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>My Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fonts type (Roboto Condensed and Gentium Book Basic) -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/1d912854bc.js" crossorigin="anonymous"></script>
+<!-- Bootstrap for CSS, JQUERY AND JAVASCRIPT -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- My own CSS and JS files goes here for overwriting some of the bootstrap one if needed -->
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div id="main-nav">
+            <ul>
+                <li class="first"><a href="../../index.html"><button><span class="fas fa-home"></span>&nbsp;&nbsp;Home</button></a></li>
+                <li class="middle"><a href="../../index.html#headline"><button><span class="far fa-id-card"></span>&nbsp;&nbsp;About Me</button></a></li>
+                <div class="myeducation">
+                    <li class="middle"><a href="../alleducation/alleducation.html"><button><span class="fas fa-graduation-cap"></span>&nbsp;&nbsp;Education</button></a></li>
+                </div>
+                <div class="work">
+                    <li class="middle"><a href="../../work/allwork/allwork.html"><button><span class="fas fa-briefcase"></span>&nbsp;&nbsp;Work</button></a></li>
+                </div>
+                <div class="myprojects">
+                    <li class="middle"><a href="../../projects/allprojects/allprojects.html"><button><span class="far fa-file-code"></span>&nbsp;&nbsp;My Projects</button></a></li>
+                    <!-- <div class="dropdown-projects">
+                        <a class="project1" href="../virelabs/virelabs.html">Case Škoda</a>
+                        <a class="project2" href="../coderunner/coderunner.html">CodeRunner</a>
+                        <a class="project3" href="../diginepsy/diginepsy.html">Diginepsy</a>
+                        <a class="project4" href="../knightrider/knightrider.html">Knight Rider</a>
+                        <a class="project5" href="../virelabs2/virelabs2.html">TrainScanner</a>
+                        <a class="project6" href="../rosproject/rosproject.html">ROS-project</a>
+                        <a class="projectUC" href="projects/underconstruction/underconstruction.html">Under Construction</a>
+                    </div> -->
+                </div>
+                <li class="middle"><a href="../../index.html#skills"><button><span class="fas fa-cogs"></span>&nbsp;&nbsp;Skills</button></a></li>
+                <!-- The following commented line is for opening a pdf file when the website is hosted by external services (external = not in github). Uncomment it if hosting website in external services -->
+                <!-- <li class="middle"><a href="/file/CVCarlosGonzalezVisiedo.pdf" target="_blank"><button><span class="fas fa-file-download"></span>&nbsp;&nbsp;Curriculum Vitae</button></a></li> -->
+                <!-- The following line is for opening a pdf file when the website is hosted in github. Comment it and uncomment the previous one if hosting website in external services -->
+                <li class="middle"><a href="https://github.com/cargonvis/cargonvis.github.io/raw/website/file/CVCarlosGonzalezVisiedo.pdf" target="_blank"><button><span class="fas fa-file-download"></span>&nbsp;&nbsp;Curriculum</button></a></li>
+                <div class="contactme">
+                    <li class="last"><a href="../../index.html#contact"><button><span class="far fa-address-book"></span>&nbsp;&nbsp;Contact</button></a></li>
+                    <div class="dropdown-contactme">
+                        <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSc4Q566bOslkseb0p0M4soGzwEz-MhEiHwttUVDKJhm4hxCsg/viewform?usp=sf_link">Send a form</a>
+                    </div>
+                </div>
+            </ul>
+            <img class="img-responsive" src="../../img/banner.jpg" alt="main_banner" width="100%" height="auto">
+        </div>
+    </header>
+    <main>
+        <div class="alleducation">
+            <h1>My Education</h1>
+            <p>Here you can information about my academic background:</p>
+            <div class="education-description">
+                <section class="master">
+                    <h1>M.Sc. in Robotics and Embedded AI</h1>
+                    <p><i class="far fa-calendar-alt"></i> <strong>Duration:</strong> September 2024 - Present</p>
+                    <p><i class="fas fa-university"></i> <strong>Institution:</strong> Maynooth University, Ireland</p>
+                    <p><i class="fas fa-book"></i> <strong>Field of Study:</strong> Electronics and Computing Sciences</p>
+                    <p><i class="fas fa-medal"></i> <strong>Specialization:</strong> Robotics and Embedded AI</p>
+                    <p><i class="fas fa-info-circle"></i> <strong>Description:</strong> </p>
+
+                    <p>Upon starting my master's at Maynooth University, I built upon my foundational knowledge from my undergraduate studies, delving deeper 
+                        into the realms of robotics and embedded AI. The program is designed to bridge computing, electronics, and mechanical engineering, 
+                        equipping me with the specialized skills necessary to design and control intelligent machines.</p>
+
+                    <p>The curriculum included courses in core areas such as Reinforcement Learning, Machine Learning & Neural Networks, Artificial Intelligence 
+                        & Language Processing, and Deep Learning. These courses advanced my understanding of AI, particularly in its application to robotics. 
+                        My learning extended to practical topics like Introduction to Control Theory for Robotics and Autonomous Mobile Robotics, where I 
+                        explored the principles underlying robot movement and autonomy.</p>
+                    
+                    <p>I also focused on the intersection of robotics and human interaction through courses like Human-Robot Interaction and 3D Vision and 
+                        Augmented Reality. These modules provided insights into the ethical and practical challenges of designing robots that can 
+                        seamlessly integrate into human environments.</p>
+                    
+                    <p>The program emphasized teamwork and innovation, with a major team project each semester. In the first semester, my team and I 
+                        concentrated on robot design and innovation, applying design thinking methodologies. The second semester’s project shifted 
+                        towards system realization and evaluation, allowing us to bring our designs to life and test their functionality in real-world 
+                        scenarios.</p>
+                    
+                    <p>My master’s thesis will be a culmination of these experiences, conducted in partnership with either an industry leader <!--like Eiratech 
+                        Robotics--> or within Maynooth’s robotics research group. This project will demonstrate my ability to apply advanced AI techniques 
+                        to solve complex problems in robotics, solidifying my expertise in embedded AI systems.</p>
+                
+                    <p>Upon graduation, I will have gained not only deep technical knowledge in robotics and AI but also invaluable experience in innovation, 
+                        teamwork, and the practical application of cutting-edge research in real-world scenarios.</p>
+
+                    <a class="moremaster" href="../master/master.html"><p>More about Master...</p></a>
+                </section>
+                <section class="bachelor">
+                    <h1>B.Eng. in Data Engineering</h1>
+                    <p><i class="far fa-calendar-alt"></i> <strong>Duration:</strong> August 2020 - August 2023</p>
+                    <p><i class="fas fa-university"></i> <strong>Institution:</strong> Satakunta University of Applied Sciences (SAMK), Finland</p>
+                    <p><i class="fas fa-book"></i> <strong>Field of Study:</strong> Data Engineering</p>
+                    <p><i class="fas fa-medal"></i> <strong>Specialization:</strong> Artificial Intelligence</p>
+                    <p><i class="fas fa-info-circle"></i> <strong>Description:</strong> </p>
+                    
+                        <p>When I started my journey at SAMK, I had no prior experience in programming, but I quickly fell in love with AI and robotics. 
+                            My Bachelor of Engineering in Data Engineering with a specialization in Artificial Intelligence provided me with a comprehensive 
+                            foundation.</p>
+
+                        <p>The curriculum included foundational courses like Basic Developer Tools and Version Control (UNIX commands and basics of Git), GIT Open, 
+                            Linux Basics, and Container Technologies (using Docker). I progressed through programming courses such as Programming Basics 
+                            (using Python), Python Programming, AI Programming (also using Python), Object-Oriented Programming (using C#), C++ Programming, 
+                            C Programming, Embedded C/C++ Programming, and an IoT course.</p>
+                        
+                        <p>In web development, networks, and cloud computing, I took courses like Introduction to Networks, Web Development Basics (HTML and CSS), 
+                            and Cloud Computing and GPUs (using Azure and Google Colab). My database courses included Relational Databases, Database Programming, 
+                            Big Data, and NoSQL Databases. I worked with MariaDB, MySQL, SQLite, MongoDB, Redis, and Neo4j.</p>
+                        
+                        <p>I gained extensive knowledge in data analysis, covering data acquisition, cleaning, preprocessing, and analysis using AI tools. This 
+                            solidified my ability to efficiently harness AI for practical data solutions.</p>
+                        
+                        <p>In AI, I studied Machine Learning, Neural Network Models, Machine Vision and Convolutional Neural Networks, and Natural Language 
+                            Processing (NLP). These courses deepened my understanding of AI, enabling me to develop sophisticated models and applications.</p>
+                    
+                        <p>Robotics was a significant part of my studies, with courses such as Robotics, Open Source Robot Platforms (ROS), Mechatronics and 
+                            Robot Programming, and participation in an international week in Belgium focused on programming drones using ROS.</p>
+                        
+                        <p>My bachelor's thesis, titled "Deep Learning EEG-based Motor Imagery System for Robot Control using 3D Printed Headset and Electrodes", 
+                            showcases my commitment to merging AI with practical applications. The project involved designing and implementing an EEG-based 
+                            motor imagery system to control a robot arm using a 3D printed headset and electrodes. This research demonstrated the potential 
+                            of custom EEG headsets and deep learning models in creating reliable and user-friendly robot control systems.</p>
+
+                    <a class="morebachelor" href="../bachelor/bachelor.html"><p>More about Bachelor...</p></a>
+                </section>
+            </div>
+        </div>
+        <div id="footer">
+            <section class="copyright">
+                <p>&#169; 2024 Carlos González Visiedo</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

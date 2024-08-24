@@ -83,47 +83,31 @@ body p {
     color: white;
 }
 
-/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
-.projectUC:hover{
-    display: none;
-}
-/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION END*/
-
-/* Dropdown menu end*/
-
-.virelabs, .diginepsy, .knightrider, .mazerunner, .virelabs2, .rosproject, .gobot {
+.coderunner, .roboai {
     background-color: #333;
     margin: 5rem 5rem 1rem 5rem;
     padding: 4rem;
     box-shadow: 0 0 4px 3px white; 
 }
 
-/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
-
-.mazerunner {
-    display: none;
-}
-
-/* UNDO THIS FOR SHOWING THE UNDER CONSTRUCTION */
-
-.morevirelabs, .morediginepsy, .moreknightrider, .moremazerunner, .morevirelabs2, .morerosproject, .moregobot {
+.morecoderunner, .moreroboai {
     color: white;
 }
 
-.morevirelabs:hover, .morediginepsy:hover, .moreknightrider:hover, .moremazerunner:hover, .morevirelabs2:hover, .morerosproject:hover, .moregobot:hover {
+.morecoderunner:hover, .moreroboai:hover {
     color: #0fffb7;
     text-decoration: none;
 }
 
-.allprojects h1, p{
+.allwork h1, p{
     text-align: center;
 }
 
-.allprojects h1 {
+.allwork h1 {
     margin-bottom: 5rem;
 }
 
-.allprojects .projects-description p {
+.allwork .work-description p {
     margin-bottom: 5rem;
 }
 
@@ -173,10 +157,6 @@ body p {
     #main-nav > a > .banner {
         width: 100%;
         min-height: 170px;
-    }
-
-    .virelabs {
-        margin-bottom: -3rem;
     }
 
     #footer > .copyright {
@@ -240,11 +220,7 @@ body p {
         margin-left: 1.05rem;
     }
 
-    .virelabs {
-        margin-bottom: -11%;
-    }
-
-    .allprojects h1{
+    .allwork h1{
         font-size: 2.5rem;
         text-align: center;
     }

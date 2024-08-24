@@ -109,11 +109,11 @@ body p {
 }
 
 #headline > .headline-left > .name {
-    margin: 0rem 2rem 2rem 5.5rem;
+    margin: 5.5rem 2rem 2rem 5.5rem;
 }
 
 #headline > .headline-left > .profile-pic {
-    border: 0.3rem solid white;
+    box-shadow: 0 0 4px 3px white;
     border-radius: 30rem;
     margin: 0rem 8rem 0rem 11rem;
 }
@@ -121,7 +121,8 @@ body p {
 #headline > .headline-left > ul {
     list-style-type: none;
     display: flex;
-    margin-left: 6rem;
+    justify-content: center;
+    margin-left: 1rem;
 }
 
 #headline > .headline-left > ul > li {
@@ -154,22 +155,22 @@ body p {
     text-align: center;
 }
 
-#projects {
+#education, #work, #projects {
     text-align: center;
 }
 
-#projects > h1 {
+/* #education > h1, #projects > h1 {
     margin-top: 6rem;
-}
+} */
 
-#projects > .projects-content{
+#education > .education-content, #work > .work-content, #projects > .projects-content {
     display: flex;
     align-content: space-between;
     margin: 6rem 0rem;
     justify-content: center;
 }
 
-#projects > .projects-content > .project-1 {
+#education > .education-content > .education-1, #work > .work-content > .work-1, #projects > .projects-content > .project-1 {
     float: left;
     width: 40%;
     margin: 0rem 1.1rem 0rem 1.7rem;
@@ -178,11 +179,11 @@ body p {
     box-shadow: 0 0 4px 3px white;
 }
 
-#projects > .projects-content > .project-1 > p {
+#education > .education-content > .education-1 > p, #work > .work-content > .work-1 > p, #projects > .projects-content > .project-1 > p {
     margin: 1rem 4rem;
 }
 
-#projects > .projects-content > .project-2 {
+#education > .education-content > .education-2, #work > .work-content > .work-2, #projects > .projects-content > .project-2 {
     float: right;
     width: 40%;
     margin: 0rem 1.7rem 0rem 1.1rem;
@@ -191,18 +192,31 @@ body p {
     box-shadow: 0 0 4px 3px white;
 }
 
-#projects > .projects-content > .project-2 > p {
+#education > .education-content > .education-2 > p, #work > .work-content > .work-2 > p, #projects > .projects-content > .project-2 > p {
     margin: 1rem 4rem;
 }
 
-#projects > .moreprojects{
+#education > .education-content > .education-1 > .masterthesis, #education > .education-content > .education-2 > .bachelorthesis {
     color: white;
-    font-size: 1.62rem
 }
 
-#projects > .moreprojects:hover{
+#education > .education-content > .education-1 > .masterthesis:hover, #education > .education-content > .education-2 > .bachelorthesis:hover {
     color: #0fffb7;
     text-decoration: none;
+}
+
+#education > .moreeducation, #work > .morework, #projects > .moreprojects {
+    color: white;
+    font-size: 1.62rem;
+}
+
+#education > .moreeducation:hover, #work > .morework:hover, #projects > .moreprojects:hover {
+    color: #0fffb7;
+    text-decoration: none;
+}
+
+#education > .moreeducation > p, #work > .morework > p, #projects > .moreprojects > p {
+    margin-bottom: 5rem;
 }
 
 #skills h1 {
@@ -283,20 +297,23 @@ body p {
     display: block; 
     width: 30rem;
     height: 30rem; 
-    border-radius: 50%; 
+    border-radius: 50%;
+    box-shadow: 0 0 4px 3px white;
     background-image: conic-gradient( 
-        DodgerBlue 0 54deg,
-        Crimson 0 108deg,  
-        #488A99 0 162deg,
-        Coral 0 216deg,
-        #FFFF66 0 252deg,
-        #421281 0 288deg,
-        #694c31 0 324deg,
+        DodgerBlue 0 72deg,
+        Crimson 0 144deg,  
+        #488A99 0 198deg,
+        Coral 0 252deg,
+        #FFFF66 0 288deg,
+        #421281 0 324deg,
+        #694c31 0 342deg,
         #6ab187 0); 
 }  
 
 #skills > .professional-skills > .graph > .infography { 
     margin: 0 auto;
+    box-shadow: 0 0 4px 3px white;
+    padding: 1rem;
 }
 
 #footer {
@@ -400,33 +417,32 @@ body p {
         align-items: center;  
     }
 
-    #projects > h1 {
+    #education > h1, #work > h1, #projects > h1 {
         margin-bottom: 2rem;
     }
     
-    #projects > .projects-content{
+    #education > .education-content, #work > .work-content, #projects > .projects-content{
         display: flex;
         flex-direction: column;
         align-items: center; 
         margin: 0rem -6rem; 
     }
 
-    #projects > .projects-content > .project-1 {
+    #education > .education-content > .education-1, #work > .work-content > .work-1, #projects > .projects-content > .project-1 {
         margin: 1rem -6rem 2rem -6rem;
     }
 
-    #projects > .projects-content > .project-1 > p {
+    #education > .education-content > .education-1 > p, #work > .work-content > .work-1 > p, #projects > .projects-content > .project-1 > p {
          margin: 1rem 1.5rem 1rem 1.5rem;
     }
 
-    #projects > .projects-content > .project-2 {
+    #education > .education-content > .education-2, #work > .work-content > .work-2, #projects > .projects-content > .project-2 {
         margin: 1rem -6rem 2rem -6rem;
     }
 
-    #projects > .projects-content > .project-2 > p {
+    #education > .education-content > .education-2 > p, #work > .work-content > .work-2 > p, #projects > .projects-content > .project-2 > p {
          margin: 1rem 1.5rem 1rem 1.5rem;
     }
-
 
     #skills > .skills-container {
         display: flex;
@@ -589,11 +605,11 @@ body p {
         margin: 0rem 2rem 2.5rem 2rem;
     }
 
-    #projects > .projects-content > .project-1 {
+    #education > .education-content > .education-1, #work > .work-content > .work-1, #projects > .projects-content > .project-1 {
         margin-left: 3.8rem;
     }
 
-    #projects > .projects-content > .project-2 {
+    #education > .education-content > .education-2, #work > .work-content > .work-2, #projects > .projects-content > .project-2 {
         margin-right: 3.8rem;
     }
 
